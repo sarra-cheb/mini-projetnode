@@ -4,7 +4,6 @@ const morgan = require('morgan');
 const bodyparser = require('body-parser');
 const passport = require('passport')
 
-const port = 4000
 const app = express();
 require('./Database/connect')
 require('./passports-strategie/bearer')
@@ -22,5 +21,5 @@ app.use('/api', require('./Routes/EmployeeApi'))
 app.use('/api', require('./Routes/MissionApi'))
 app.use('/api', require('./Routes/AuthApi'))
 
-app.listen(port, console.log('App running on port ' + port)
+app.listen(4000, console.log('App running on port ')
 )
